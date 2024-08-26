@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <title>ESDA-Eastern Shore Driving Academy </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">  
+    <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1> Este es el encabezado</h1>
@@ -12,12 +15,13 @@
     <main>
         <h2>Cuerpo del documento</h2>
         <section>
-            <article>
-                <h2>primer parte del cuerpo</h2>
+            <article id="art-1">
+                <h3>primer parte del cuerpo</h3>
                 <p>este es un parrafo que contiene informacion</p>
             </article>
-            <article>
-                <h2> segunda parte del cuerpo con lista ordenada</h2>
+            <article id="art-2">
+                <div class="list">
+                <h3> segunda parte del cuerpo con lista ordenada</h3>
                 <h4> primer semestre</h4>
                 <ol>
                     <li>Enero</li>
@@ -27,7 +31,9 @@
                     <li>Mayo</li>
                     <li>Junio</li>
                 </ol>
-                <h2>Segunda parte del cuerpo con lista desordenada</h2>
+            </div>
+            <div class="list">
+                <h3>Segunda parte del cuerpo con lista desordenada</h3>
                 <h4>segundo semestre</h4>
                 <ul>
                     <li>Julio</li>
@@ -37,26 +43,26 @@
                     <li>Noviembre</li>
                     <li>Diciembre</li>
                 </ul>
+            </div>
             </article>
-            <article>
-                <h2>Tercera parte del documento</h2>
-                <form action="">
+            <article id="art-3">
+                <h3>Tercera parte del documento</h3>
+                <div>
+                <form class="form" action="">
                     <label for="" >Nombre <input type="text" name="" placeholder="escriba su nombre" id=""></label>
                 </form>
-                <form action="">
+                <form class="form" action="">
                     <label for="" >apellido<input type="text" name="" placeholder="escriba su apellido" id=""></label>
                 </form>
-                <input type="button" value="aceptar">
+                <input class="btn" type="button" value="aceptar">
+            </div>
             </article>
-
+        </section>
+    </main>
             <footer>
                 <h2>fin del documento</h2>
             </footer>
-        </section>
-    </main>
 
-    <footer>
-
-    </footer>
 </body>
+
 </html>
